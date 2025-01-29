@@ -1,38 +1,125 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.full_page{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.image-outsquare{
+  position: absolute;
+  top: calc(100% - 70%);
+  left: calc(100% - 44%);
+  border: 1px solid #fff;
+  width: 25rem;
+  height: 25rem;
+}
+.center-image img{
+  position: absolute;
+  top: calc(100% - 77%);
+  left: calc(100% - 47%);
+  width: 25rem;
+  height: 25rem;
+  object-fit: cover;
+}
+.hero{
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}
+.section-one{
+  display: flex;
+  flex-direction: column;
+  padding-left: 90px;
+  padding-top: 50px;
+  flex: 2;
+  background-color: rgb(60, 18, 211);
+  padding-right: 150px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.dots-grid-wrapper{
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.dots-grid{
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 8px;
+  width: 130px;
+  height: 130px;
+
+}
+
+.dot{
+  width: 1px;
+  height: 1px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.hero-content{
+  display: flex;
+  flex-direction: column;
+  padding-left: 50px;
+}
+.hero-content .zigzag-image{
+  display: flex;
+  justify-content: flex-end;
+  width: inherit;
+  padding-right: 200px;
+  margin-top: -50px;
+}
+.hero-content .hero-praise{
+  display: flex;
+  flex-direction: row;
+  gap: 80px;
+}
+
+
+.section-two{
+  display: flex;
+  flex-direction: column;
+  padding-top: 70px;
+  padding-right: 90px;
+  flex: 1;
+  background-color: lightcoral;
+}
+
+.section-two header{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.section-two header span img{
+  width: 35px;
+  height: 35px;
+}
+
+.section-two section{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.section-two section .zigzag-image{
+  padding-top: calc(100% - 70%);
+  padding-left: calc(100% - 45%);
+}
+
+.section-two section .dots-grid{
+  padding-top: 30px;
+  padding-left: calc(100% - 60%);
+}
+
+.section-two section .shapes{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  position: absolute;
+  top: calc(100% - 40%);
+  right: 90px;
+}
+
+.section-two section .shapes span img{
+  width: 20spx;
+  height: 20px;
 }
