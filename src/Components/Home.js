@@ -1,8 +1,10 @@
-import diamond from "../Icons/diamond.png"
 import square from "../Icons/square.png"
 import zigzag from "../Icons/zigzag.png"
-import menuIcon from "../Icons/menuIcon.png"
 import myPic from "../Icons/myPic.jpg"
+import favicon from "../Icons/favicon.png"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub, faFacebook,faXTwitter, faInstagram, faSlideshare } from '@fortawesome/free-brands-svg-icons';
+
 export const Home = () => {
     return (
         <div className="full_page">
@@ -11,7 +13,7 @@ export const Home = () => {
                 <span className="center-image"><img src={myPic} alt="my Image"/></span>
                 <div className="section-one">
                     <header>
-                        <h1>Abraham</h1>
+                        <p>Abr<span><img src={favicon}/></span>ham</p>
                     </header>
 
                     <section>
@@ -25,12 +27,12 @@ export const Home = () => {
                         </div>
                         
                         <div className="hero-content">
-                            <h3>
-                                Frontend <br/> Developer.
-                            </h3>
+                            <p className="frontend">
+                                Fullstack <br/> Developer<span>.</span>
+                            </p>
 
-                            <p>
-                                I like to craft solid and scalable frontend products <br/>   with great user experiences.
+                            <p className="message">
+                                I like to craft solid and scalable fullstack products <br/>   with great user experiences.
                             </p>
 
                             <p className="zigzag-image"><img src ={zigzag} alt ="Zigzag"/></p>
@@ -50,7 +52,7 @@ export const Home = () => {
 
                 <div className="section-two">
                     <header>
-                        <span><img src = {menuIcon} alt ="menu icon"/></span>
+                        <span className="Icon"><FontAwesomeIcon icon={faSlideshare}/></span>
                     </header>
 
                     <section>
@@ -65,10 +67,10 @@ export const Home = () => {
                         </div>
                         <div className="shapes">
                             <span><img src={square} alt="square"/></span>
-                            <span><img src={diamond} alt="diamond"/></span>
-                            <span><img src={diamond} alt="diamond"/></span>
-                            <span><img src={diamond} alt="diamond"/></span>
-                            <span><img src={diamond} alt="diamond"/></span>
+                            <span className="Icon"><FontAwesomeIcon icon={faGithub} /></span>
+                            <span className="Icon"><FontAwesomeIcon icon={faFacebook}/></span>
+                            <span className="Icon"><FontAwesomeIcon icon={faXTwitter}/></span>
+                            <span className="Icon"><FontAwesomeIcon icon={faInstagram}/></span>
                         </div>
                     </section>
                 </div>
