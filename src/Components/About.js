@@ -13,18 +13,20 @@ export const About = () => {
                         return <div key={index} className="dottt"></div>
                         })}
                     </div>
-                    <header>
+                    <div className="notesaboutme">
+                        <header>
+                            <p>
+                                Desing
+                            </p>
+                        </header>
                         <p>
-                            Desing
+                        I'm probably not the typical designer positioned behind an<br/>
+                        Illustrator artboard adjusting pixels, but I design. Immersed in <br/>
+                        stylesheets tweaking font sizes and contemplating layouts is <br/>
+                        where you'll find me (~_^). I'm committed to creating fluent user <br/>
+                        experiences while staying fashionable.
                         </p>
-                    </header>
-                    <p>
-                    I'm probably not the typical designer positioned behind an<br/>
-                    Illustrator artboard adjusting pixels, but I design. Immersed in <br/>
-                    stylesheets tweaking font sizes and contemplating layouts is <br/>
-                    where you'll find me (~_^). I'm committed to creating fluent user <br/>
-                    experiences while staying fashionable.
-                    </p>
+                    </div>
                     <p>
 
                     </p>
@@ -40,14 +42,16 @@ export const About = () => {
                     return <div key={index} className="dott"></div>
                     })}
                 </div>
-                <header>
+                <div className="notesaboutme">
+                    <header>
+                        <p>
+                            Engineering
+                        </p>
+                    </header>
                     <p>
-                        Engineering
+                        In building JavaScript applications, I'm equipped with just the <br/>right tools, and can absolutely function independently of them <br/>to deliver fast, resilient solutions optimized for scale — <br/>performance and scalabilty are priorities on my radar.
                     </p>
-                </header>
-                <p>
-                    In building JavaScript applications, I'm equipped with just the <br/>right tools, and can absolutely function independently of them <br/>to deliver fast, resilient solutions optimized for scale — <br/>performance and scalabilty are priorities on my radar.
-                </p>
+                </div>
             </section>
             
         </div>

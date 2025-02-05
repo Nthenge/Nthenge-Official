@@ -220,5 +220,16 @@ header p img{
 }
 
 header p{
+  font-weight: 800;
   color: blue;
 }
+.notesaboutme{
+  display: flex;
+  flex-direction: column;
+}
+ .notesaboutme header{
+  margin-bottom: -3rem;
+ }
+ .notesaboutme header p{
+  line-height: 25px;
+ }
