@@ -180,7 +180,6 @@ header p img{
   flex-direction: column;
   flex: 1;
   padding-left: 145px;
-  background-color: yellow;
 }
 
 .aboutMe .section-twoo{
@@ -188,7 +187,6 @@ header p img{
   flex-direction: column;
   flex: 1;
   padding-left: 50px;
-  background-color: red;
 }
 
 .dotts-grid{
