@@ -71,7 +71,8 @@ export const About = () => {
                     <span className="Icon"><FontAwesomeIcon icon={faGithub} /></span>
                     <span className="Icon"><FontAwesomeIcon icon={faFacebook}/></span>
                     <span className="Icon"><FontAwesomeIcon icon={faXTwitter}/></span>
-                    <span className="Icon"><FontAwesomeIcon icon={faInstagram}/></span></div>
+                    <span className="Icon"><FontAwesomeIcon icon={faInstagram}/></span>
+                </div>
             </section>
             
         </div>
