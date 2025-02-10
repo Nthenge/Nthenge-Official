@@ -41,12 +41,12 @@ header p{
     font-family: 'Roboto', sans-serif;
     font-size: 50px;
     font-weight: 700;
-    color: lightcoral;
+    color: rgb(34, 21, 82);
 }
 
 header p img{
   background: transparent;
-  width: 25px;
+  width: 23px;
   object-fit: cover;
 }
 
@@ -179,9 +179,12 @@ header p img{
   display: flex;
   flex-direction: column;
   flex: 1;
-  padding-left: 145px;
+  padding-left: 95px;
 }
 
+.aboutMe .section-onee .abouts{
+  padding-left: 50px;
+}
 .aboutMe .section-twoo{
   display: flex;
   flex-direction: column;
@@ -219,10 +222,6 @@ header p img{
   background-color: #000;
 }
 
-header p{
-  font-weight: 800;
-  color: blue;
-}
 .notesaboutme{
   display: flex;
   flex-direction: column;
@@ -233,3 +232,42 @@ header p{
  .notesaboutme header p{
   line-height: 25px;
  }
+.abouts header{
+  margin-bottom: -190px;
+}
+.dottts-grid{
+  padding-left: 70px;
+}
+.dotttss-grid{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 2px;
+  width: 130px;
+  height: 130px;
+}
+.dotttt{
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  border: 1px solid rgb(60, 18, 211);
+  background-color: transparent;
+}
+.grid-dots{
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+}
+
+.section-twoo .shapes span img{
+  width: 20spx;
+  height: 20px;
+}
+
+.section-twoo section .shapes{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  position: absolute;
+  top: calc(100% - 40%);
+  right: 90px;
+}
