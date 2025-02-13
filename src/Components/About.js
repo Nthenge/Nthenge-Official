@@ -1,8 +1,5 @@
 import zigzag from "../Icons/zigzag.png"
-import square from "../Icons/square.png"
 import { FaKey } from "react-icons/fa";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub, faFacebook,faXTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons';
 export const About = () => {
     return (
         <div className="aboutMe">
@@ -64,14 +61,6 @@ export const About = () => {
                     <p>
                         In building JavaScript applications, I'm equipped with just the <br/>right tools, and can absolutely function independently of them <br/>to deliver fast, resilient solutions optimized for scale — <br/>performance and scalabilty are priorities on my radar.
                     </p>
-                </div>
-
-                <div className="shapes">
-                    <span><img src={square} alt="square"/></span>
-                    <span className="Icon"><FontAwesomeIcon icon={faGithub} /></span>
-                    <span className="Icon"><FontAwesomeIcon icon={faFacebook}/></span>
-                    <span className="Icon"><FontAwesomeIcon icon={faXTwitter}/></span>
-                    <span className="Icon"><FontAwesomeIcon icon={faInstagram}/></span>
                 </div>
             </section>
             

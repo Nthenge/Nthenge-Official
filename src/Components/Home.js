@@ -1,9 +1,7 @@
-import square from "../Icons/square.png"
 import zigzag from "../Icons/zigzag.png"
 import myPic from "../Icons/myPic.jpg"
 import favicon from "../Icons/favicon.png"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub, faFacebook,faXTwitter, faInstagram, faSlideshare } from '@fortawesome/free-brands-svg-icons';
+import { StickySidebar } from "./StickySidebar";
 
 export const Home = () => {
     return (
@@ -51,10 +49,6 @@ export const Home = () => {
                 </div>
 
                 <div className="section-two">
-                    <header>
-                        <span className="Icon"><FontAwesomeIcon icon={faSlideshare}/></span>
-                    </header>
-
                     <section>
                         <div className="zigzag-image">
                              <img src={zigzag} alt="zigzag"/>   
@@ -64,13 +58,6 @@ export const Home = () => {
                                 {[...Array(144)].map((_, index)=>{
                                     return <div key={index} className="dot"></div>
                                 })}
-                        </div>
-                        <div className="shapes">
-                            <span><img src={square} alt="square"/></span>
-                            <span className="Icon"><FontAwesomeIcon icon={faGithub} /></span>
-                            <span className="Icon"><FontAwesomeIcon icon={faFacebook}/></span>
-                            <span className="Icon"><FontAwesomeIcon icon={faXTwitter}/></span>
-                            <span className="Icon"><FontAwesomeIcon icon={faInstagram}/></span>
                         </div>
                     </section>
                 </div>
