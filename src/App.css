@@ -1,98 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-.full_page{
+::-webkit-scrollbar {
+  display: none;
+}
+
+body{
+  margin: 0;
+  padding: 0;
   display: flex;
-  flex-direction: column;
-  color: #fff;
   font-family: 'Poppins', sans-serif;
-}
-
-.image-outsquare{
-  position: absolute;
-  top: calc(100% - 69%);
-  left: calc(100% - 45%);
-  border: 1px solid #fff;
-  width: 20rem;
-  height: 20rem;
-}
-.center-image img{
-  position: absolute;
-  top: calc(100% - 77%);
-  left: calc(100% - 47%);
-  width: 20rem;
-  height: 20rem;
-  object-fit: cover;
-}
-/* sticky side bar styles */
-.sidebar{
-  position: sticky;
-  top: 90px;
-  left: calc(100% - 15%);
-  width: fit-content;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  height: 80vh;
-  color: blue;
-}
-.sidebar .media{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-}
-
-.sidebar span{
-  cursor: pointer;
-}
-
-
-.hero{
-  display: flex;
-  flex-direction: row;
-  height: 95vh;
-}
-.section-one{
-  display: flex;
-  flex-direction: column;
-  padding-left: 95px;
-  padding-top: 5px;
-  flex: 2;
-  background-color: rgb(60, 18, 211);
-  padding-right: 150px;
-}
-
-header p{
-    font-family: 'Roboto', sans-serif;
-    font-size: 50px;
-    font-weight: 700;
-    color: rgb(34, 21, 82);
-}
-
-header p img{
-  background: transparent;
-  width: 23px;
-  object-fit: cover;
-}
-
-.hero-content .frontend{
-  font-family: 'Roboto', sans-serif;
-  font-size: 60px;
-  font-weight: 600;
-  color: lightcoral;
-  margin-bottom:  20px;
-  margin-top: -20px;
-}
-.hero-content .frontend span{
-  color: #fff;
+  line-height: 25px;
 }
 
 .dots-grid-wrapper{
   display: flex;
   justify-content: flex-end;
-  width: 100%;
-  margin-top: -35px;
+  margin-top: 70px;
+  margin-bottom: -70px;
 }
 
 .dots-grid{
@@ -107,162 +30,72 @@ header p img{
   width: 1px;
   height: 1px;
   border-radius: 50%;
-  background-color: #fff;
+  background-color: black;
 }
 
-.hero-content{
-  display: flex;
-  flex-direction: column;
-  padding-left: 50px;
+.image-outsquare{
+    position: absolute;
+    top: calc(100% - 69%);
+    left: calc(100% - 45%);
+    border: 1px solid black;
+    width: 20rem;
+    height: 20rem;
 }
 
-.zigzag-image{
-  display: flex;
-  justify-content: flex-end;
-  width: inherit;
-  padding-right: 200px;
-  margin-top: -10px;
+.center-image img{
+  position: absolute;
+  top: calc(100% - 77%);
+  left: calc(100% - 47%);
+  width: 20rem;
+  height: 20rem;
+  object-fit: cover;
 }
 
-.hero-content .hero-praise{
-  display: flex;
-  flex-direction: row;
-  gap: 80px;
-}
-
-.hero-content .message{
-  font-weight: 300;
-  line-height: 25px;
-}
-.hero-content .hero-praise p{
-  color: lightcoral;
-  font-size: 14px;
-  line-height: 25px;
-}
-
-.section-two{
-  display: flex;
-  flex-direction: column;
-  padding-top: 70px;
-  padding-right: 90px;
-  flex: 1;
-  background-color: lightcoral;
-}
-
-.section-two header{
-  display: flex;
-  justify-content: flex-end;
-}
-
-.section-two header span img{
-  width: 35px;
-  height: 35px;
-}
-
-.section-two section{
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.section-two section .zigzag-image{
-  padding-top: calc(100% - 70%);
-  padding-left: calc(100% - 50%);
-}
-
-.section-two section .dots-grid{
-  padding-top: 25px;
-  padding-left: calc(100% - 89%);
-}
-
-.aboutMe{
+.hero{
   display: flex;
   flex-direction: row;
+  gap: 50px;
+  min-width: 1150px;
   height: 100vh;
-  background-color: #fff;
-  margin-top: 8vh;
-  color: #000;
+  margin-left: 100px;
+  margin-top: 50px;
 }
 
-.aboutMe .section-onee{
+.hero .section-1{
   display: flex;
   flex-direction: column;
-  flex: 1;
-  padding-left: 95px;
+  width: calc(100% - 30%);
+  height: inherit;
 }
 
-.aboutMe .section-onee .abouts{
-  padding-left: 50px;
-}
-.aboutMe .section-twoo{
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-  padding-left: 50px;
+.frontend{
+  font-size: 60px;
+  font-weight: 700;
+  color: rgb(34, 21, 82);
+  line-height: 80px;
 }
 
-.dotts-grid{
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  gap: 8px;
-  width: 130px;
-  height: 130px;
-}
-
-.dott{
-  width: 1px;
-  height: 1px;
-  border-radius: 50%;
-  background-color: #000;
-}
-
-.dottts-grid{
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  gap: 8px;
-  width: 130px;
-  height: 130px;
-}
-
-.dottt{
-  width: 1px;
-  height: 1px;
-  border-radius: 50%;
-  background-color: #000;
-}
-
-.notesaboutme{
+.hero .notes{
   display: flex;
   flex-direction: column;
 }
- .notesaboutme header{
-  margin-bottom: -3rem;
- }
- .notesaboutme header p{
-  line-height: 25px;
- }
-.abouts header{
-  margin-bottom: -190px;
+
+.hero .notes .zigzag-image{
+  display: flex;
+  justify-content: center;
 }
-.dottts-grid{
-  padding-left: 70px;
-}
-.dotttss-grid{
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 2px;
-  width: 130px;
-  height: 130px;
-}
-.dotttt{
-  width: 5px;
-  height: 5px;
-  border-radius: 50%;
-  border: 1px solid rgb(60, 18, 211);
-  background-color: transparent;
-}
-.grid-dots{
+
+.hero  .hero-praise{
   display: flex;
   flex-direction: row;
-  gap: 100px;
+  gap: 20px;
+  font-size: 14px;
+}
+
+.hero .section-2{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: calc(100% - 70%);
+  height: inherit;
 }

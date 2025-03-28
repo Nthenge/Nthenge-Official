@@ -5,17 +5,13 @@ import { StickySidebar } from "./StickySidebar";
 
 export const Home = () => {
     return (
-        <div className="full_page">
-            <section className="hero">
+            <div className="hero">
                 <span className="image-outsquare"></span>
                 <span className="center-image"><img src={myPic} alt="my Image"/></span>
-                <div className="section-one">
-                    <header>
+                <section className="section-1">
+                    {/* <header>
                         <p>Abr<span><img src={favicon}/></span>ham</p>
-                    </header>
-
-                    <section>
-
+                    </header> */}
                         <div className="dots-grid-wrapper">
                             <div className ="dots-grid">
                                 {[...Array(144)].map((_, index)=>{
@@ -24,7 +20,7 @@ export const Home = () => {
                             </div>
                         </div>
                         
-                        <div className="hero-content">
+                        <div className="notes">
                             <p className="frontend">
                                 Fullstack <br/> Developer<span>.</span>
                             </p>
@@ -45,10 +41,9 @@ export const Home = () => {
                                 </p>
                             </div>
                         </div>
-                    </section>
-                </div>
+                </section>
 
-                <div className="section-two">
+                <div className="section-2">
                     <section>
                         <div className="zigzag-image">
                              <img src={zigzag} alt="zigzag"/>   
@@ -61,8 +56,7 @@ export const Home = () => {
                         </div>
                     </section>
                 </div>
-            </section>
-        </div>
+            </div>
     );
 }
 

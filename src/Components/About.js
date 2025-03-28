@@ -21,11 +21,11 @@ export const About = () => {
                     
                     <div className="notesaboutme">
                         <p>
-                        I'm probably not the typical designer positioned behind an<br/>
-                        Illustrator artboard adjusting pixels, but I design. Immersed in <br/>
-                        stylesheets tweaking font sizes and contemplating layouts is <br/>
-                        where you'll find me (~_^). I'm committed to creating fluent user <br/>
-                        experiences while staying fashionable.
+                            I'm probably not the typical designer positioned behind an<br/>
+                            Illustrator artboard adjusting pixels, but I design. Immersed in <br/>
+                            stylesheets tweaking font sizes and contemplating layouts is <br/>
+                            where you'll find me (~_^). I'm committed to creating fluent user <br/>
+                            experiences while staying fashionable.
                         </p>
                     </div>
                     <div className ="dotttss-grid">
