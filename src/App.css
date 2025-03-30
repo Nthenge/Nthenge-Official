@@ -51,7 +51,7 @@ body{
   object-fit: cover;
 }
 
-.hero{
+.hero, .aboutMe{
   display: flex;
   flex-direction: row;
   gap: 50px;
@@ -68,7 +68,7 @@ body{
   height: inherit;
 }
 
-.frontend{
+.frontend, .aboutMe header p{
   font-size: 60px;
   font-weight: 700;
   color: rgb(34, 21, 82);
