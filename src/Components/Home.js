@@ -1,7 +1,5 @@
 import zigzag from "../Icons/zigzag.png"
 import myPic from "../Icons/myPic.jpg"
-import favicon from "../Icons/favicon.png"
-import { StickySidebar } from "./StickySidebar";
 
 export const Home = () => {
     return (
@@ -9,9 +7,6 @@ export const Home = () => {
                 <span className="image-outsquare"></span>
                 <span className="center-image"><img src={myPic} alt="my Image"/></span>
                 <section className="section-1">
-                    {/* <header>
-                        <p>Abr<span><img src={favicon}/></span>ham</p>
-                    </header> */}
                         <div className="dots-grid-wrapper">
                             <div className ="dots-grid">
                                 {[...Array(144)].map((_, index)=>{

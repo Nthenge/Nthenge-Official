@@ -6,9 +6,14 @@
 body{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   display: flex;
   font-family: 'Poppins', sans-serif;
   line-height: 25px;
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
 }
 
 .dots-grid-wrapper{
@@ -27,10 +32,10 @@ body{
 }
 
 .dot{
-  width: 1px;
-  height: 1px;
+  width: 2px;
+  height: 2px;
   border-radius: 50%;
-  background-color: black;
+  background-color: #fff;
 }
 
 .image-outsquare{
@@ -51,51 +56,85 @@ body{
   object-fit: cover;
 }
 
-.hero, .aboutMe{
+.hero{
   display: flex;
   flex-direction: row;
-  gap: 50px;
-  min-width: 1150px;
+  align-items: stretch;
   height: 100vh;
-  margin-left: 100px;
-  margin-top: 50px;
+  width: 100vw; 
+  scroll-snap-align: start;
+  flex-wrap: wrap;
 }
 
 .hero .section-1{
+  width: 67vw;
   display: flex;
   flex-direction: column;
-  width: calc(100% - 30%);
-  height: inherit;
+  background-color: rgba(74, 30, 217, 0.9);
+  color: #fff;
 }
 
-.frontend, .aboutMe header p{
-  font-size: 60px;
-  font-weight: 700;
-  color: rgb(34, 21, 82);
-  line-height: 80px;
+.section-1 .dots-grid-wrapper{
+  margin-top: 7rem;
+  margin-right: 9rem;
 }
 
-.hero .notes{
-  display: flex;
-  flex-direction: column;
+.notes{
+  padding-left: 10rem;
 }
 
-.hero .notes .zigzag-image{
-  display: flex;
-  justify-content: center;
+.notes .frontend{
+  font-size: 80px;
+  line-height: 5rem;
+  font-weight: 600;
+  color: rgba(135, 243, 52,  0.9);
 }
 
-.hero  .hero-praise{
+.notes .frontend span{
+  color: #fff;
+}
+
+.notes .hero-praise{
   display: flex;
   flex-direction: row;
-  gap: 20px;
+  gap: 10px;
   font-size: 14px;
+  color: rgba(135, 243, 52,  0.9);
+  font-weight: 500;
+}
+
+.notes .message{
+  font-weight: 600;
+  margin-top: -40px;
+}
+
+.notes .zigzag-image{
+  display: flex;
+  justify-content: center;
+  margin-right: -7rem;
 }
 
 .hero .section-2{
+  width: calc(100vw - 67vw);
   display: flex;
-  justify-content: flex-end;
+  flex-direction: column;
   align-items: center;
-  width: calc(100% - 70%);
-  height: inherit;
+  justify-content: center;
+  background-color: rgba(121, 227, 41, 0.5);
+}
+
+.dots-grid{
+  margin-left: -9rem;
+}
+
+.section-2 .dot{
+  background: rgba(74, 30, 217, 0.9);
+}
+
+.aboutMe{
+  scroll-snap-align: start;
+  display: flex;
+  flex-direction: row;  
+  height: 100vh;
+  width: 100vw;
 }
