@@ -1,12 +1,8 @@
 import zigzag from "../Icons/zigzag.png"
-import { FaKey } from "react-icons/fa";
 export const About = () => {
     return (
         <div className="aboutMe">
-            <section className="section-onee">
-                <header>
-                    <p className="fakey"><FaKey/></p>                
-                </header>
+            <section className="section2-1">
                 <div className="abouts">
                     <header>
                         <p> 
@@ -39,7 +35,7 @@ export const About = () => {
                 </div>
             </section>
 
-            <section className="section-twoo">
+            <section className="section2-2">
                 <div className="grid-dots">
                     <div className ="dotttss-grid">
                         {[...Array(5)].map((_, index)=>{
