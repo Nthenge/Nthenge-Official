@@ -70,7 +70,7 @@ body{
   width: 67vw;
   display: flex;
   flex-direction: column;
-  background-color: rgba(74, 30, 217, 0.9);
+  background-color: blue;
   color: #fff;
 }
 
@@ -137,4 +137,69 @@ body{
   flex-direction: row;  
   height: 100vh;
   width: 100vw;
+}
+
+.aboutMe .section2-1{
+  display: flex;
+  flex-direction: column;
+  width: 47vw;
+  padding-left: 10rem;
+}
+
+.aboutMe .headerDiv{
+  display: flex;
+  flex-direction: row;
+}
+
+.aboutMe .abouts{
+  margin-top: 7rem;
+}
+
+.aboutMe header p{
+  font-size: 60px;
+  font-weight: 700;
+  color: blue;
+}
+
+.aboutMe .headerDiv p{
+  margin-top: 6rem;
+  margin-right: 10px;
+}
+
+.aboutMe .headerDiv .dot{
+  background-color: rgba(121, 227, 41, 0.9);
+}
+
+.headerDiv{
+  margin-bottom: -40px;
+}
+
+.aboutMe .notesaboutme{
+  display: flex;
+  flex-direction: column;
+  border: 1px solid red;
+}
+
+.aboutMe .notesaboutme .dots-grid{
+  display: flex;
+  justify-content: flex-end;
+  border: 1px solid red;
+}
+
+.aboutMe .grid-dots{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 7rem;
+}
+
+.aboutMe .grid-dots .dot{
+  background-color: rgba(121, 227, 41, 0.9);
+}
+
+.aboutMe .notesaboutme .dot{
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: rgb(175, 106, 106);
 }

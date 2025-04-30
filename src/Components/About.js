@@ -4,17 +4,19 @@ export const About = () => {
         <div className="aboutMe">
             <section className="section2-1">
                 <div className="abouts">
-                    <header>
-                        <p> 
-                            Desing
-                        </p>
-                    </header>
-                    <div className ="dottts-grid">
-                        {[...Array(144)].map((_, index)=>{
-                        return <div key={index} className="dottt"></div>
-                        })}
-                    </div>
+                    <div className="headerDiv">
+                        <header>
+                            <p> 
+                                Desing
+                            </p>
+                        </header>
                     
+                        <div className ="dots-grid">
+                                {[...Array(144)].map((_, index)=>{
+                                return <div key={index} className="dot"></div>
+                                })}
+                            </div>
+                    </div>
                     <div className="notesaboutme">
                         <p>
                             I'm probably not the typical designer positioned behind an<br/>
@@ -23,32 +25,39 @@ export const About = () => {
                             where you'll find me (~_^). I'm committed to creating fluent user <br/>
                             experiences while staying fashionable.
                         </p>
-                    </div>
-                    <div className ="dotttss-grid">
-                        {[...Array(5)].map((_, index)=>{
-                        return <div key={index} className="dotttt"></div>
-                        })}
-                    </div>
-                    <div className="zigzag-image">
-                        <img src={zigzag} alt="zigzag"/>   
+
+                        <div className ="dots-grid">
+                            {[...Array(5)].map((_, index)=>{
+                            return <div key={index} className="dot"></div>
+                            })}
+                        </div>
+                        
+                        <div className="zigzag-image">
+                            <img src={zigzag} alt="zigzag"/>   
+                        </div>
+                        
                     </div>
                 </div>
             </section>
 
             <section className="section2-2">
                 <div className="grid-dots">
-                    <div className ="dotttss-grid">
+
+                    <div className ="dots-grid">
                         {[...Array(5)].map((_, index)=>{
-                        return <div key={index} className="dotttt"></div>
+                        return <div key={index} className="dot"></div>
                         })}
                     </div>
-                    <div className ="dotts-grid">
+
+                    <div className ="dots-grid">
                         {[...Array(144)].map((_, index)=>{
-                        return <div key={index} className="dott"></div>
+                        return <div key={index} className="dot"></div>
                         })}
                     </div>
+
                 </div>
-                <div className="notesaboutme">
+
+                <div className="engineering">
                     <header>
                         <p>
                             Engineering
